@@ -1,8 +1,8 @@
-import HeroCard from "@/components/HeroCard";
+import HeroPage from "@/components/HeroPage";
 export default function Home() {
   return (
-    <div className="">
-      <HeroCard/>
+    <div id="hero" className="max-w-screen w-full py-3">
+      <HeroPage/>
     </div>
   );
 }

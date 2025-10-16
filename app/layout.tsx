@@ -30,7 +30,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider attribute='class' enableSystem defaultTheme="system">
-        <main className="font-sans min-h-screen min-w-screen flex flex-col items-center pb-10 px-8 sm:px-20 md:px-28 transition-all duration-3000">
+        <main className="font-sans min-h-screen  flex flex-col items-center pb-10 px-8 sm:px-15 md:px-20 transition-all duration-3000">
         <NavBar/>
         {children}
         </main>

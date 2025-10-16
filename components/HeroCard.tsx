@@ -4,7 +4,7 @@ import { Github, Globe, Linkedin, Mail } from "lucide-react"
 
 function HeroCard() {
   return (
-    <div className="w-[380px] h-[650px] xs:w-[430px] bg-gradient-to-br dark:from-slate-800 dark:to-slate-900 from-slate-100 to-slate-200 flex flex-col items-center px-8 py-8 rounded-3xl shadow-xl">
+    <div className="w-full h-[650px] bg-gradient-to-br dark:from-slate-800 dark:to-slate-900 from-slate-100 to-slate-200 flex flex-col items-center px-8 py-8 rounded-3xl shadow-xl">
         {/* Profile Image */}
         <div className="w-64 h-64 relative mb-6">
             <Image 
