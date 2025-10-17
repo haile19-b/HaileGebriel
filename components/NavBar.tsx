@@ -1,16 +1,22 @@
 'use client'
 
 import { FolderKanban, House, Laptop, Mail, Moon, Sun } from "lucide-react";
-import Link from "next/link";
 import Toggle from "./Toggle-Themes";
+
+const ScrollSection = (section:string) => {
+  const element = document.getElementById(section)
+  if(element){
+    element.scrollIntoView({behavior:'smooth'})
+  }
+}
 
 function NavBar() {
 
     const navItems = [
-        { name: "home", href: "/home", icon: House},
-        { name: "skill", href: "/skill", icon: Laptop  },
-        { name: "projec", href: "/project", icon: FolderKanban },
-        { name: "contact", href: "/contact", icon: Mail}
+        { name: "home", href: "hero", icon: House},
+        { name: "skill", href: 'skill', icon: Laptop  },
+        { name: "projec", href: "project", icon: FolderKanban },
+        { name: "contact", href: "contact", icon: Mail}
       ];
 
     return (
@@ -23,12 +29,12 @@ function NavBar() {
         {navItems.map((item,inx)=>{
             const Icon = Array.isArray(item.icon) ? item.icon[0] : item.icon
             return(
-                <Link
-                href={item.href}
+                <div
                 key={inx}
+                onClick={()=>ScrollSection(item.href)}
                 >
                     <Icon className="text-purple-600"/>
-                </Link>
+                </div>
             )
         })}
         <Toggle/>
