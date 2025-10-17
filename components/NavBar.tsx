@@ -20,7 +20,7 @@ function NavBar() {
       ];
 
     return (
-      <div className="w-full relative p-4 pt-10 flex items-center bg-transparent">
+      <div className="w-full fixed top-0 z-50 p-4 pt-10 flex items-center justify-center bg-white/30 dark:bg-black/30 backdrop-blur-sm">
         <div className="hidden lg:block text-2xl font-extrabold tracking-tight absolute left-4 top-1/2 -translate-y-1/2">
           HaileGebriel
         </div>
