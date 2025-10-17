@@ -29,16 +29,16 @@ function HeroCard() {
 
         {/* Social Links */}
         <div className="flex gap-4 mt-auto">
-            <Button variant="ghost" size="icon" className="hover:bg-slate-700">
+            <Button variant="ghost" size="icon" className="hover:bg-slate-700 dark:hover:bg-purple-500">
                 <Globe className="w-5 h-5" />
             </Button>
-            <Button variant="ghost" size="icon" className="hover:bg-slate-700">
+            <Button variant="ghost" size="icon" className="hover:bg-slate-700 dark:hover:bg-purple-500">
                 <Github className="w-5 h-5" />
             </Button>
-            <Button variant="ghost" size="icon" className="hover:bg-slate-700">
+            <Button variant="ghost" size="icon" className="hover:bg-slate-700 dark:hover:bg-purple-500">
                 <Linkedin className="w-5 h-5" />
             </Button>
-            <Button variant="ghost" size="icon" className="hover:bg-slate-700">
+            <Button variant="ghost" size="icon" className="hover:bg-slate-700 dark:hover:bg-purple-500">
                 <Mail className="w-5 h-5" />
             </Button>
         </div>

@@ -1,5 +1,6 @@
 import AboutMe from "@/components/AboutMe";
 import HeroPage from "@/components/HeroPage";
+import Skill from "@/components/Skill";
 export default function Home() {
   return (
     <div className="max-w-screen w-full py-3 flex flex-col gap-20">
@@ -12,8 +13,13 @@ export default function Home() {
 
        {/* AboutMe section */}
 
-       <section id="skill">
+       <section id="aboutMe">
         <AboutMe/>
+       </section>
+
+       {/* Skill section */}
+       <section id="skill">
+        <Skill/>
        </section>
 
     </div>
