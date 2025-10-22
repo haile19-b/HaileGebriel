@@ -1,6 +1,11 @@
+'use client'
+import { UseProjectState } from "@/Store/Zustand"
 import HeroCard from "./HeroCard"
 
 function HeroPage() {
+
+  const {num_of_Projects} = UseProjectState()
+
   return (
     <div className="flex flex-col lg:flex-row gap-10 w-full h-full">
         <div className="">
@@ -18,13 +23,13 @@ function HeroPage() {
             </p>
            </div>
            <div className="flex justify-around font-bold text-sm md:text-2xl">
-            <span className="flex flex-col items-center justify-center text-center max-w-30">+11
+            <span className="flex flex-col items-center justify-center text-center max-w-30">+{num_of_Projects}
                 <p className="text-center">PROJECTS COMPLETED</p>
             </span>
-            <span className="flex flex-col items-center justify-center text-center max-w-30">+4
+            <span className="flex flex-col items-center justify-center text-center max-w-30">+3
                 <p className="text-center">YEARS OF EXPERIENCE</p>
             </span>
-            <span className="flex flex-col items-center justify-center text-center max-w-30">+8
+            <span className="flex flex-col items-center justify-center text-center max-w-30">+2
                 <p className="text-center">WORLDWIDE CLIENTS</p>
             </span>
            </div>
