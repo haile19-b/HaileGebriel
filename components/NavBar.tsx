@@ -3,7 +3,7 @@
 import { FolderKanban, House, Laptop, Mail, Moon, Sun } from "lucide-react";
 import Toggle from "./Toggle-Themes";
 
-const ScrollSection = (section:string) => {
+export const ScrollSection = (section:string) => {
   const element = document.getElementById(section)
   if(element){
     element.scrollIntoView({behavior:'smooth'})
@@ -21,7 +21,9 @@ function NavBar() {
 
     return (
       <div className="w-full fixed top-0 z-50 p-4 pt-10 flex items-center justify-center bg-white/30 dark:bg-black/30 backdrop-blur-sm">
-        <div className="hidden lg:block text-2xl font-extrabold tracking-tight absolute left-4 top-1/2 -translate-y-1/2">
+        <div 
+        onClick={()=>ScrollSection('hero')}
+        className="hidden lg:block text-2xl font-extrabold tracking-tight absolute left-4 top-1/2 -translate-y-1/2 cursor-pointer">
           HaileGebriel
         </div>
   
