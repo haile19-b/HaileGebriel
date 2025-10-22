@@ -7,42 +7,16 @@ import { useEffect, useState } from "react"
 import { UseProjectState } from "@/Store/Zustand"
 
 function ProjectPage() {
-  // const projects = [
-  //   {
-  //     name: "Real-Time Chat Application",
-  //     description: "A full-stack messaging platform with real-time messaging, user authentication, and responsive design. Built with modern web technologies for seamless communication.",
-  //     image: '/Haile2.jpg',
-  //     technologies: ["Next.js", "Socket.io", "Tailwind", "MongoDB"],
-  //     liveLink: "#",
-  //     githubLink: "#"
-  //   },
-  //   {
-  //     name: "Real-Time Chat Application",
-  //     description: "A full-stack messaging platform with real-time messaging, user authentication, and responsive design. Built with modern web technologies for seamless communication.",
-  //     image: '/real-chat-app.png',
-  //     technologies: ["Next.js", "Socket.io", "Tailwind", "MongoDB"],
-  //     liveLink: "#",
-  //     githubLink: "#"
-  //   },
-  //   {
-  //     name: "Real-Time Chat Application",
-  //     description: "A full-stack messaging platform with real-time messaging, user authentication, and responsive design. Built with modern web technologies for seamless communication.",
-  //     image: '/real-chat-app.png',
-  //     technologies: ["Next.js", "Socket.io", "Tailwind", "MongoDB"],
-  //     liveLink: "#",
-  //     githubLink: "#"
-  //   },
-  // ]
 
-  const {Projects} = UseProjectState();
+  const {ProjectsItems} = UseProjectState();
 
   const [myProjects, setMyProjects] = useState([])
 
   useEffect(() => {
-    if (Projects) {
-      setMyProjects(Projects)
+    if (ProjectsItems) {
+      setMyProjects(ProjectsItems)
     }
-  }, [Projects])
+  }, [ProjectsItems])
 
   return (
     <div className="min-h-screen py-20 px-4 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800">

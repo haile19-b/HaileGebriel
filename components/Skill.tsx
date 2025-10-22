@@ -1,33 +1,23 @@
+'use client'
+
+import { UseSkillState } from "@/Store/Zustand";
+import { SkillType } from "@/types";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 function Skill() {
-    const skills = [
-      {
-        title: "UI/UX Design",
-        description: "Creating intuitive and engaging user experiences with modern design tools. Focus on user-centered design principles, wireframing, and prototyping.",
-        images: ['/figma.png']
-      },
-      {
-        title: "Frontend Development", 
-        description: "Building responsive and performant web applications using modern frameworks. Specialized in React ecosystem with TypeScript.",
-        images: ['/javascript.jpg', '/next.png', '/react.png', '/tailwind.webp', '/typescript.jpg']
-      },
-      {
-        title: "Backend Development",
-        description: "Developing robust server-side solutions and RESTful APIs. Experience with database design and server management.",
-        images: ['/express.png', '/node.jpg', '/supabase.png']
-      },
-      {
-        title: "Database",
-        description: "Designing and managing efficient database systems with both SQL and NoSQL solutions for optimal performance.",
-        images: ['/mongo.jpg', '/postgress.jpg']
-      },
-      {
-        title: "DevOps & Technologies",
-        description: "Implementing development workflows, version control, and modern tooling for efficient project delivery.",
-        images: ['/framer-motion.webp', '/github.jpg', '/rest-api.jpg', '/shadcn.png']
+
+    const {SkillItems} = UseSkillState();
+
+    const [mySkill,setMySkill] = useState<SkillType[]>([]);
+
+    useEffect(()=>{
+      
+      if(SkillItems){
+        setMySkill(SkillItems)
       }
-    ];
+
+    },[SkillItems])
   
     return (
       <div className="min-h-screen flex flex-col items-center py-20 px-4 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800">
@@ -40,7 +30,7 @@ function Skill() {
           <div className="absolute left-6 top-0 h-full w-0.5 bg-gradient-to-b from-blue-400 to-purple-400"></div>
 
           <ul className="space-y-16">
-            {skills.map((skill, index) => (
+            {mySkill.map((skill, index) => (
               <li key={index} className="relative flex gap-8 items-start group">
                 {/* Timeline dot */}
                 <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center shadow-lg z-10 group-hover:scale-110 transition-transform">

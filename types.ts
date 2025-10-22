@@ -6,3 +6,9 @@ export type ProjectType = {
     liveDemo: string
     sourceCode: string
 }
+
+export type SkillType = {
+    title:string,
+    description:string,
+    images:string[]
+}
