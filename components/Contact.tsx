@@ -44,8 +44,8 @@ function Contact() {
       } else {
         alert('Failed to send message');
       }
-    } catch (error) {
-      alert('Error sending message');
+    } catch (error:any) {
+      alert(error.message);
     }
   }
 

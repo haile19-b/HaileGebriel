@@ -22,7 +22,7 @@ function Footer() {
         </div>
         <div className="max-w-md flex justify-center items-center">
             <p className="text-center text-md font-serif text-slate-400">
-            Let&#39;s build something amazing together. I'm always open to discussing new opportunities and creative projects.
+            Let&#39;s build something amazing together. I&#39;m always open to discussing new opportunities and creative projects.
             </p>
         </div>
         <div className="flex gap-4">
