@@ -36,8 +36,8 @@ function AboutMe() {
               Software Engineering Student
             </h2>
             <p className="text-lg md:text-xl text-slate-600 dark:text-slate-300 leading-relaxed pl-6 border-l-2 border-blue-200 dark:border-blue-800">
-              I'm currently in my 3rd year of Software Engineering at Adama Science and Technology University (ASTU), 
-              one of Ethiopia's leading institutions for technology education. Here, I'm building a strong foundation 
+              I&#39;m currently in my 3rd year of Software Engineering at Adama Science and Technology University (ASTU), 
+              one of Ethiopia&#39;s leading institutions for technology education. Here, I&#39;m building a strong foundation 
               in computer science principles while staying current with modern development practices.
             </p>
           </div>

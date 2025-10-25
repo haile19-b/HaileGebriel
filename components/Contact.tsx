@@ -55,7 +55,7 @@ function Contact() {
       <div className="text-center mb-16">
         <h1 className="text-5xl md:text-6xl font-bold mb-4">
           <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            LET'S WORK
+            LET&#39;S WORK
           </span>
           <br />
           <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
@@ -63,7 +63,7 @@ function Contact() {
           </span>
         </h1>
         <p className="text-xl text-slate-600 dark:text-slate-300 max-w-2xl">
-          Ready to bring your ideas to life? Let's discuss your project and create something amazing.
+          Ready to bring your ideas to life? Let&#39;s discuss your project and create something amazing.
         </p>
       </div>
 
