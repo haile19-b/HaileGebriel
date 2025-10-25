@@ -1,6 +1,6 @@
 'use client'
 
-import { FolderKanban, House, Laptop, Mail, Moon, Sun } from "lucide-react";
+import { FolderKanban, House, Laptop, Mail } from "lucide-react";
 import Toggle from "./Toggle-Themes";
 
 export const ScrollSection = (section:string) => {

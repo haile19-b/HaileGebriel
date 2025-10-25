@@ -1,6 +1,6 @@
 'use client'
 
-import { Github, Globe, Linkedin, Mail } from "lucide-react"
+import { Github, Linkedin, Mail } from "lucide-react"
 import { Button } from "./ui/button"
 import { ScrollSection } from "./NavBar"
 import Link from "next/link"

@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { Button } from "./ui/button"
-import { Github, Globe, Linkedin, Mail } from "lucide-react"
+import { Github, Linkedin, Mail } from "lucide-react"
 import Link from "next/link"
 
 function HeroCard() {
