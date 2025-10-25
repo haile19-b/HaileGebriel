@@ -67,11 +67,11 @@ function ProjectPage() {
               <div className="flex gap-4 pt-4">
                 <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg flex items-center gap-2">
                   <ExternalLink size={18} />
-                  <Link href={prj.liveDemo}>Live Demo</Link>
+                  <Link href={prj.liveDemo} target="-blank" rel="noopener noreferrer" >Live Demo</Link>
                 </Button>
                 <Button variant="outline" className="border-slate-300 dark:border-slate-600 px-6 py-3 rounded-lg flex items-center gap-2">
                   <Github size={18} />
-                  <Link href={prj.sourceCode}>Source Code</Link>
+                  <Link href={prj.sourceCode} target="_blank" rel="noopener noreferrer">Source Code</Link>
                 </Button>
               </div>
             </div>
